@@ -4,7 +4,8 @@ import { useState } from "react"
 export const Contact = () => {
     const [mensaje, setMensaje] = useState('')
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+      e.preventDefault()
       setMensaje('Enviado correctamente')
     }
     console.log(mensaje) 
